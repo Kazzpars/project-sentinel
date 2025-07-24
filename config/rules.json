@@ -1,0 +1,29 @@
+[
+  {
+    "rule_id": 1001,
+    "name": "TCP SYN Scan (Stealth Scan)",
+    "protocol": "TCP",
+    "match": {
+      "flags": "S"
+    },
+    "message": "ALERT: Terdeteksi percobaan TCP SYN Scan dari IP sumber"
+  },
+  {
+    "rule_id": 1002,
+    "name": "FTP Login Attempt",
+    "protocol": "TCP",
+    "match": {
+      "dport": 21
+    },
+    "message": "ALERT: Terdeteksi percobaan koneksi ke port FTP (21) dari IP sumber"
+  },
+  {
+    "rule_id": 2001,
+    "name": "ICMP Echo Request (Ping)",
+    "protocol": "ICMP",
+    "match": {
+      "type": 8
+    },
+    "message": "INFO: Terdeteksi ICMP Echo Request (Ping) dari IP sumber"
+  }
+]
