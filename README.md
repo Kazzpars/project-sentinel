@@ -116,3 +116,5 @@ Contoh isi file config/rules.json:
 ├── README.md
 └── requirements.txt
 ```
+
+Jika ada kritik dan saran, silahkan!
